@@ -1,0 +1,51 @@
+header {
+    border-bottom: black 2px solid;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    padding-bottom: 10px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.userLogo {
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard a {
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dashboard {
+        flex-direction: column;
+        margin: 25px;
+    }
+
+    .dashboard a {
+        padding: 8px;
+    }
+
+    .userSettings {
+        padding-bottom: 20px;
+    }
+}
